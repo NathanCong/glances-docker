@@ -7,4 +7,4 @@ set -e
 sudo docker compose down
 
 # 第二步：再启动服务
-sudo docker-compose -f docker-compose.yml -f docker-compose.gpu.yml up -d
+sudo docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d
