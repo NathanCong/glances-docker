@@ -6,6 +6,15 @@ Docker 部署 Glances 系统监控服务
 
 https://glances.readthedocs.io/en/latest/index.html#
 
+## 使用前准备
+
+```bash
+# 在基于 Debian/Ubuntu 的系统上安装 lm-sensors
+sudo apt update
+sudo apt install lm-sensors
+sudo sensors-detect --auto # 自动检测并加载传感器模块
+```
+
 ## 启动服务（不包含 NVIDIA GPU 监控）
 
 ```bash
